@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hello World - Multi-Language
+
+A beautiful, modern Hello World page built with React, Next.js, and Tailwind CSS. This Single Page Application (SPA) features a dynamic, minimalist design with animated background elements and multi-language support.
+
+## Features
+
+- **Modern Design**: Clean, minimalist interface with a blurred dynamic background
+- **Colorful Background**: Animated colorful shapes and forms that create a vibrant, blurred background
+- **Multi-Language Support**: Displays "Hello World" in 6 different languages:
+  - English: "Hello World"
+  - Spanish: "Hola Mundo"
+  - French: "Bonjour le Monde"
+  - Italian: "Ciao Mondo"
+  - German: "Hallo Welt"
+  - Portuguese: "Olá Mundo"
+- **Smooth Animations**: 3-second display duration with smooth transitions between languages
+- **Responsive Design**: Optimized for all screen sizes
+- **Floating Particles**: Subtle animated particles for enhanced visual appeal
+
+## Technologies Used
+
+- **React 18**: For component-based UI development
+- **Next.js 15**: For server-side rendering and routing
+- **TypeScript**: For type safety and better development experience
+- **Tailwind CSS**: For utility-first styling and responsive design
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser** and navigate to `http://localhost:3000`
+
+## How It Works
+
+The page displays "Hello World" in English for 3 seconds, then smoothly transitions to display the same greeting in 5 other languages. Each language is shown for 3 seconds before transitioning to the next one, creating a continuous loop.
+
+The background features animated, blurred colorful shapes that create a dynamic and modern aesthetic while maintaining the minimalist design approach.
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── page.tsx          # Main Hello World component
+│   ├── layout.tsx        # Root layout component
+│   └── globals.css       # Global styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Hot Reload**: Changes are reflected immediately in the browser
+- **TypeScript**: Full type safety for better development experience
+- **ESLint**: Code quality and consistency
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+This project can be easily deployed to Vercel, Netlify, or any other hosting platform that supports Next.js applications.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built for Linear Issue HAS-5: "Create a hello world page"
