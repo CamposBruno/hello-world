@@ -1,69 +1,137 @@
-# Hello World - Multi-Language
+# Hello World - Multi-Language Animation
 
-A beautiful, modern Hello World page built with React, Next.js, and Tailwind CSS. This Single Page Application (SPA) features a dynamic, minimalist design with animated background elements and multi-language support.
+A beautiful, accessible Hello World page with dynamic language transitions and smooth animations built with Next.js 15, React 19, and TypeScript.
 
-## Features
+## ✨ Features
 
-- **Modern Design**: Clean, minimalist interface with a blurred dynamic background
-- **Colorful Background**: Animated colorful shapes and forms that create a vibrant, blurred background
-- **Multi-Language Support**: Displays "Hello World" in 6 different languages:
-  - English: "Hello World"
-  - Spanish: "Hola Mundo"
-  - French: "Bonjour le Monde"
-  - Italian: "Ciao Mondo"
-  - German: "Hallo Welt"
-  - Portuguese: "Olá Mundo"
-- **Smooth Animations**: 3-second display duration with smooth transitions between languages
-- **Responsive Design**: Optimized for all screen sizes
-- **Floating Particles**: Subtle animated particles for enhanced visual appeal
+- **Multi-language Support**: Displays "Hello World" in 7 different languages
+- **Smooth Typing Animation**: Realistic typewriter effect with typing and deleting animations
+- **Beautiful UI**: Gradient backgrounds with animated particles and floating elements
+- **Accessibility**: Full ARIA support, keyboard navigation, and screen reader compatibility
+- **Error Handling**: Comprehensive error boundaries with user-friendly fallbacks
+- **Performance Optimized**: Custom hooks, memoization, and efficient re-renders
+- **Responsive Design**: Works perfectly on all device sizes
 
-## Technologies Used
+## 🚀 Tech Stack
 
-- **React 18**: For component-based UI development
-- **Next.js 15**: For server-side rendering and routing
-- **TypeScript**: For type safety and better development experience
-- **Tailwind CSS**: For utility-first styling and responsive design
+- **Framework**: Next.js 15.4.5
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **React**: 19.1.0
+- **Error Handling**: react-error-boundary
+- **Build Tool**: Turbopack
 
-## Getting Started
+## 🏗️ Architecture
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Code Quality Improvements
 
-2. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
+- **Component Separation**: Extracted reusable components (`AnimatedBackground`, `FloatingParticles`)
+- **Custom Hooks**: Created `useTypingAnimation` for better logic reusability
+- **Error Boundaries**: Added comprehensive error handling with fallback UI
+- **TypeScript**: Full type safety with proper interfaces
+- **Accessibility**: ARIA labels, live regions, and semantic HTML
+- **Performance**: Optimized with `useCallback`, `useMemo`, and proper dependency arrays
 
-3. **Open your browser** and navigate to `http://localhost:3000`
-
-## How It Works
-
-The page displays "Hello World" in English for 3 seconds, then smoothly transitions to display the same greeting in 5 other languages. Each language is shown for 3 seconds before transitioning to the next one, creating a continuous loop.
-
-The background features animated, blurred colorful shapes that create a dynamic and modern aesthetic while maintaining the minimalist design approach.
-
-## Project Structure
+### File Structure
 
 ```
 src/
 ├── app/
-│   ├── page.tsx          # Main Hello World component
-│   ├── layout.tsx        # Root layout component
-│   └── globals.css       # Global styles
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Main page component
+│   └── globals.css         # Global styles
+├── components/
+│   ├── AnimatedBackground.tsx
+│   └── FloatingParticles.tsx
+├── hooks/
+│   └── useTypingAnimation.ts
+└── data/
+    └── constants.ts        # Language and particle data
 ```
 
-## Development
+## 🛠️ Development
 
-- **Hot Reload**: Changes are reflected immediately in the browser
-- **TypeScript**: Full type safety for better development experience
-- **ESLint**: Code quality and consistency
+### Prerequisites
 
-## Deployment
+- Node.js 18+ 
+- npm or yarn
 
-This project can be easily deployed to Vercel, Netlify, or any other hosting platform that supports Next.js applications.
+### Installation
 
----
+```bash
+npm install
+```
 
-Built for Linear Issue HAS-5: "Create a hello world page"
+### Development Server
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+## 🎨 Languages Supported
+
+- English: "Hello World"
+- Spanish: "Hola Mundo"
+- French: "Bonjour le Monde"
+- Italian: "Ciao Mondo"
+- German: "Hallo Welt"
+- Portuguese: "Olá Mundo"
+- Japanese: "こんにちは世界"
+
+## ♿ Accessibility Features
+
+- **ARIA Labels**: Descriptive labels for screen readers
+- **Live Regions**: Dynamic content updates announced to assistive technology
+- **Semantic HTML**: Proper heading structure and landmarks
+- **Keyboard Navigation**: Full keyboard accessibility
+- **High Contrast**: Optimized for users with visual impairments
+
+## 🔧 Code Quality
+
+- **ESLint**: Zero warnings or errors
+- **TypeScript**: Strict type checking enabled
+- **Error Boundaries**: Graceful error handling
+- **Performance**: Optimized animations and re-renders
+- **Maintainability**: Clean, modular code structure
+
+## 📦 Dependencies
+
+### Production
+- `react`: 19.1.0
+- `react-dom`: 19.1.0
+- `next`: 15.4.5
+- `react-error-boundary`: Latest
+
+### Development
+- `typescript`: ^5
+- `@types/node`: ^20
+- `@types/react`: ^19
+- `@types/react-dom`: ^19
+- `tailwindcss`: ^4
+- `eslint`: ^9
+- `eslint-config-next`: 15.4.5
+
+## 🚀 Deployment
+
+The application is optimized for production with:
+
+- Static generation for optimal performance
+- Optimized bundle sizes
+- Proper meta tags for SEO
+- Open Graph support for social sharing
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
